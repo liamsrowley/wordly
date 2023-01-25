@@ -5,6 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'standard-with-typescript',
     'plugin:prettier/recommended',
   ],
@@ -15,7 +16,10 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
-  rules: {
-    'react/react-in-jsx-scope': 0,
+  rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

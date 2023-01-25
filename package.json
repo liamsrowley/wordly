@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && yarn lint && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint --fix . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "react": "^18.2.0",
